@@ -26,6 +26,7 @@ public class CompraController {
 	public void init() {
 		this.listaCompras = new ArrayList<Compra>();
 		this.c = new Compra();
+		this.list();
 	}
 
 	public String newCompra() {
@@ -43,7 +44,7 @@ public class CompraController {
 
 	public void list() {
 		try {
-			cService.list();
+			listaCompras=cService.list();
 		} catch (Exception e) {
 			System.out.println("Error al listar compras en el controller");
 		}

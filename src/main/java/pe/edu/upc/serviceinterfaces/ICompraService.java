@@ -8,4 +8,7 @@ public interface ICompraService {
 	public void insert(Compra c);
 
 	public List<Compra> list();
+	
+	public void delete(int id);
+	
 }

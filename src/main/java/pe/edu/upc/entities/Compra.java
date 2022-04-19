@@ -2,11 +2,28 @@ package pe.edu.upc.entities;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GenerationType;
+
+@Entity
+@Table(name = "Compra")
 public class Compra {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int IdCompra;
+	
+	@Column(name = "Total",nullable = false, length = 47)
 	private double Total;
+	
+	@Column(name = "FechaCompra",nullable = false)
 	private Date FechaCompra;
+	
+	@Column(name = "MetodoPago",nullable = false, length = 46)
 	private String MetodoPago;
 
 	// CONSTRUCTOR SIN PARÁMETROS
