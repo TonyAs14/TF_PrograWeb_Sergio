@@ -7,7 +7,7 @@ public class Compra {
 	private int IdCompra;
 	private double Total;
 	private Date FechaCompra;
-	private boolean MetodoPago;
+	private String MetodoPago;
 
 	// CONSTRUCTOR SIN PARÁMETROS
 	public Compra() {
@@ -16,7 +16,7 @@ public class Compra {
 	}
 
 	// CONSTRUCTOR CON PARÁMETROS
-	public Compra(int idCompra, double total, Date fechaCompra, boolean metodoPago) {
+	public Compra(int idCompra, double total, Date fechaCompra, String metodoPago) {
 		super();
 		this.IdCompra = idCompra;
 		this.Total = total;
@@ -49,11 +49,11 @@ public class Compra {
 		FechaCompra = fechaCompra;
 	}
 
-	public bool getMetodoPago() {
+	public String getMetodoPago() {
 		return MetodoPago;
 	}
 
-	public void setMetodoPago(bool metodoPago) {
+	public void setMetodoPago(String metodoPago) {
 		MetodoPago = metodoPago;
 	}
 

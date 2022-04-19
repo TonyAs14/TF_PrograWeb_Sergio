@@ -1,9 +1,7 @@
 package pe.edu.upc.daoimpls;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.resource.cci.ResultSet;
 import pe.edu.upc.daointerfaces.ICompraDao;
 import pe.edu.upc.entities.Compra;
 
