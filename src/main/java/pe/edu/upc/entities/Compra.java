@@ -7,7 +7,7 @@ public class Compra {
 	private int IdCompra;
 	private double Total;
 	private Date FechaCompra;
-	private bool MetodoPago;
+	private boolean MetodoPago;
 
 	// CONSTRUCTOR SIN PARÁMETROS
 	public Compra() {
@@ -16,7 +16,7 @@ public class Compra {
 	}
 
 	// CONSTRUCTOR CON PARÁMETROS
-	public Compra(int idCompra, double total, Date fechaCompra, bool metodoPago) {
+	public Compra(int idCompra, double total, Date fechaCompra, boolean metodoPago) {
 		super();
 		this.IdCompra = idCompra;
 		this.Total = total;
