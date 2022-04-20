@@ -44,9 +44,17 @@ public class CompraController {
 
 	public void list() {
 		try {
-			listaCompras=cService.list();
+			listaCompras = cService.list();
 		} catch (Exception e) {
 			System.out.println("Error al listar compras en el controller");
+		}
+	}
+
+	public void delete(Compra comp) {
+		try {
+			cService.delete(comp.getIdCompra());
+		} catch (Exception e) {
+			System.out.println("Error al eliminar en el controlador de compra");
 		}
 	}
 

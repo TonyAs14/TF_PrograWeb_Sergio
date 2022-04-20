@@ -26,4 +26,10 @@ public class CompraServiceImpl implements ICompraService {
 		return cDao.list();
 	}
 
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		cDao.delete(id);
+	}
+
 }

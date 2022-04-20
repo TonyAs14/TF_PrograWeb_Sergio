@@ -41,15 +41,13 @@ public class CompraImpl implements ICompraDao {
 		return listaCompras;
 	}
 	
-@Transactional
 	@Override
+	@Transactional
 	public void delete(int id) {
 		// TODO Auto-generated method stub
 		try {
-			Compra com = em.find(Compra.class, id);
-			
+			Compra com = em.find(Compra.class, id);			
 			em.remove(com);
-					
 		} catch (Exception e) {
 			System.out.println("Error al eliminar en el DAO");
 		}
